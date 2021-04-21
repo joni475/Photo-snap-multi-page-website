@@ -31,6 +31,8 @@ let basic = document.querySelector("#basicPay");
 let pro = document.querySelector("#proPay");
 let business = document.querySelector("#businessPay");
 
+let perMonth = document.querySelectorAll(".per-month"); 
+
 
   let checkbox = document.querySelector('input[type="checkbox"]');
 
@@ -41,9 +43,10 @@ let business = document.querySelector("#businessPay");
       basic.textContent="$228";
       pro.textContent="$468";
       business.textContent="$1188";
+      for(let i=0; i<perMonth.length; i++){
+        perMonth[i].textContent="per year";
+      }
     } else {
       location.reload();
-      
-  
     }
   });

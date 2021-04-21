@@ -225,14 +225,14 @@ header {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 21em;
+    height: 18.3em;
 }
 
 .header-side {
     height: 0.5em;
     width: 10em;
     position: absolute;
-    top: 21em;
+    top: 18.3em;
     left: 2em;
     background: var(--main-accent);
 }
@@ -319,6 +319,7 @@ main {
 .input,
 .subscription-wrapper {
     text-align: center;
+    position: relative;
 }
 
 .basic,
@@ -349,10 +350,22 @@ main {
 .pro {
     background-color: #000;
     color: #fff;
-    box-shadow:
-        inset 0px 4px 2px 0 #bc7198,
-        0px -4px 2px 0 #5776ff,
-        0px -5px 2px 0 #ffc694;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.pro-side {
+    height: 0.5em;
+    width: 100%;
+    position: relative;
+    top: -3em;
+    background: var(--main-accent);
+}
+.pro-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 /* table styling */
@@ -419,7 +432,7 @@ article {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 3em 2em;
+    padding: 3em 1em;
 }
 
 article h2 {
@@ -586,10 +599,9 @@ footer {
     }
 
     .header-side {
-        width: 10em;
-        left: -4.8em;
-        ;
-        top: 17em;
+        width: 9em;
+        left: -4.3em;
+        top: 15.5em;
         transform: rotate(90deg);
     }
 
@@ -601,18 +613,55 @@ footer {
         grid-row: 1;
         grid-column: 2 / 3;
         width: 100%;
-        height: 32.6em;
+        height: 30.6em;
     }
 
     .header-story {
         margin: auto;
-        width: 30em;
+        width: 30.6em;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
 
+    /* subscription-wrapper styling */
+    main {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .subscription-wrapper h2 {
+        margin: 0;
+    }
+
+    .basic,
+    .pro-wrapper,
+    .business {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+    }
+    #basicPay,
+    #proPay,
+    #businessPay {
+        grid-row: 1;
+        grid-column: 2 / 3;
+        text-align: right;
+    }
+    .per-month {
+        grid-row: 2;
+        grid-column: 2 / 3; 
+        text-align: right;
+    }
+    .pro-side {
+        transform: rotate(90deg);
+        position: relative;
+        top: 5.3em;
+        left: -8.4em;
+        width: 17.2em; 
+    }
     /* table styling */
     .table-mobile {
         display: none;
@@ -744,12 +793,12 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 100%;
+        height: 30.6em;
         justify-self: center;
     }
 
     .header-side {
-        top: 16em;
+        top: 15.5em;
     }
 
     .header-story {
@@ -762,7 +811,16 @@ footer {
     main {
         padding: 6em 0;
     }
-
+    .basic,
+    .pro-wrapper,
+    .business {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .subscription-wrapper button {
+        width: 100%;
+    }
     .subscription-wrapper {
         display: grid;
         grid-gap: 2em;
@@ -774,6 +832,12 @@ footer {
     .pro {
         grid-row: 1 / span 3;
         grid-column: 2 / 3;
+    }
+    .pro-side {
+        transform: rotate(0);
+        left: 0;
+        top: -5em;
+        width: 100%;
     }
 
     .table-mobile {

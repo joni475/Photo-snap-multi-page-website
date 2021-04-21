@@ -680,7 +680,9 @@ footer {
     }
 
     .header-side {
-        top: 20.5em;
+        top: 20.3em;
+        width: 18.5em;
+        left: -9em;
     }
 
     .header-story {

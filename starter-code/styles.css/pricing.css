@@ -361,6 +361,7 @@ main {
     top: -3em;
     background: var(--main-accent);
 }
+
 .pro-wrapper {
     display: flex;
     flex-direction: column;
@@ -630,6 +631,7 @@ footer {
         padding-right: 2em;
         padding-left: 2em;
     }
+
     .subscription-wrapper h2 {
         margin: 0;
     }
@@ -643,6 +645,7 @@ footer {
         text-align: left;
         width: 100%;
     }
+
     #basicPay,
     #proPay,
     #businessPay {
@@ -650,18 +653,21 @@ footer {
         grid-column: 2 / 3;
         text-align: right;
     }
+
     .per-month {
         grid-row: 2;
-        grid-column: 2 / 3; 
+        grid-column: 2 / 3;
         text-align: right;
     }
+
     .pro-side {
         transform: rotate(90deg);
         position: relative;
         top: 5.3em;
         left: -8.4em;
-        width: 17.2em; 
+        width: 17.2em;
     }
+
     /* table styling */
     .table-mobile {
         display: none;
@@ -811,16 +817,19 @@ footer {
     main {
         padding: 6em 0;
     }
+
     .basic,
     .pro-wrapper,
     .business {
-         display: flex;
-         align-items: center;
-         justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
     .subscription-wrapper button {
         width: 100%;
     }
+
     .subscription-wrapper {
         display: grid;
         grid-gap: 2em;
@@ -833,6 +842,7 @@ footer {
         grid-row: 1 / span 3;
         grid-column: 2 / 3;
     }
+
     .pro-side {
         transform: rotate(0);
         left: 0;

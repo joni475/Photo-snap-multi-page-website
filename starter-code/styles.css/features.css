@@ -439,10 +439,9 @@ footer {
     }
 
     .header-side {
-        width: 10em;
-        left: -4.8em;
-        ;
-        top: 16em;
+        width: 9em;
+        left: -4.3em;
+        top: 15.5em;
         transform: rotate(90deg);
     }
 
@@ -485,9 +484,8 @@ footer {
         background-size: cover;
         width: 100%;
         height: 17.5em;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .article-side {
@@ -498,13 +496,6 @@ footer {
         width: 17.5em;
     }
 
-    article h2 {
-        width: 55%;
-    }
-
-    article .btn-four img {
-        margin: 0;
-    }
 
     footer {
         display: grid;
@@ -566,25 +557,20 @@ footer {
         background-repeat: no-repeat;
         width: 100%;
         height: 30.6em;
-        justify-self: right;
+        justify-self: center;
     }
 
     .header-story {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        width: 38.1em;
+        width: 38em;
         height: 30.6em;
+        padding-right: 7em;
+        padding-left: 7em;
     }
 
-    .header-story p {
-        width: 30em;
+    .header-side {
+        top: 15.5em;
     }
 
-    .header-story h1 {
-        align-self: flex-start;
-        padding-left: 1.8em;
-    }
 
     main {
         display: grid;
@@ -607,10 +593,11 @@ footer {
         background-repeat: no-repeat;
         width: 100%;
         padding: 3em 8% 1em 8%;
+        display: grid;
     }
 
-    .article-h2-wrapper {
-        width: 50em
+    article h2 {
+        width: 10em;
     }
 
     article .btn-four img {
